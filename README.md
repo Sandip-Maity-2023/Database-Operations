@@ -2,11 +2,11 @@ LAB ASSIGNMENT 1
 
 ##Q1. create database and switch it
 test> use collegeDB
-switched to db collegeDB
+
 
 ##Q2. Create students collection
 collegeDB> db.createCollection("students")
-{ ok: 1 }
+
 
 ###Q3. Q3. Insert one document
 collegeDB> db.students.insertOne({
@@ -15,10 +15,6 @@ collegeDB> db.students.insertOne({
 ... department:"CSE",
 ... age:20
 ... })
-{
-  acknowledged: true,
-  insertedId: ObjectId('6962b0ef5541da38d963b112')
-}
 
 ##Q4. Insert four more documents
 
@@ -44,16 +40,8 @@ collegeDB> db.students.insertMany([{
 ... rollNo:105,
 ... department:"CSE",
 ... age:24}])
-{
-  acknowledged: true,
-  insertedIds: {
-    '0': ObjectId('6962b2815541da38d963b113'),
-    '1': ObjectId('6962b2815541da38d963b114'),
-    '2': ObjectId('6962b2815541da38d963b115'),
-    '3': ObjectId('6962b2815541da38d963b116'),
-    '4': ObjectId('6962b2815541da38d963b117')
-  }
-}
+
+
 
 ##Q5. Display all documents
 
@@ -136,13 +124,7 @@ collegeDB> db.students.updateOne({
 ... rollNo:101},
 ... {$set:{age:21}}
 ... )
-{
-  acknowledged: true,
-  insertedId: null,
-  matchedCount: 1,
-  modifiedCount: 1,
-  upsertedCount: 0
-}
+
 
 ##Q8. Delete one document
 
