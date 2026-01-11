@@ -28,15 +28,6 @@ collegeDB> db.students.insertOne({
   acknowledged: true,
   insertedId: ObjectId('6962b0ef5541da38d963b112')
 }
-collegeDB> db.students.insertMany([
-... name:"Sandip Maity",
-Uncaught:
-SyntaxError: Unexpected token, expected "," (2:4)
-
-  1 | db.students.insertMany([
-> 2 | name:"Sandip Maity",
-    |     ^
-  3 |
 
 collegeDB> db.students.insertMany([{
 ... name:"Sujata Maity",
